@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Lst"
+            android:listSelector="@color/limegreen"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lay2"
+        android:layout_weight="0.5">
+        <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </TabWidget>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_gravity="center" >
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <include layout="@layout/fragment_f1"
+                        android:id="@+id/ejemplo1"/>
+                    <include layout="@layout/fragment_f2"
+                        android:id="@+id/ejemplo2"/>
+                    <include layout="@layout/fragment_f3"
+                        android:id="@+id/ejemplo3"/>
+                </FrameLayout>
+            </ScrollView>
+        </LinearLayout>
+    </TabHost>
+    </LinearLayout>
+
+</LinearLayout>

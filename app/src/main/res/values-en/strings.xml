@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name = "L"> Places </string>
+    <string name = "Cine"> Cinema </string>
+    <string name = "Teatro"> Theatre </string>
+    <string name = "Restaurante"> Restaurant </string>
+    <string name = "Rumba"> Rumba </string>
+    <string name = "Turismo"> Tourism </string>
+    <string name = "cine1t"> Royal Films </string>
+    <string name = "cine1"> It is a familiar company that began only a theater in the heart of the city of Barranquilla,
+ but it was not enough to place a new entertainment; but as a culture form hobby of Colombians;
+ why through the years we have grown to expand our horizons by building new cinemas and
+ shopping centers, which have allowed us to project into the future and have a presence in the top five
+ film companies in Colombia.\n\nLocal 3392, the Town # 43A\n in to 10:00 p. m.
+    </string>
+    <string name = "cine2t"> CineMark </string>
+    <string name = "cine2"> The company was declared as the display of the Year by NATO.
+ Cinemark Multiplex Treasury\n\n opens in Medellin. NDC The Treasury\n
+ Transversal Superior Cra 25 A No. 1 A -. Southern 45
+    </string>
+    <string name = "cine3t"> Cinemas Procinal </string>
+    <string name = "cine3"> Being at home with friends, good food and a good home theater sound good to entertain,
+ However, have you considered triple that level of experience in every way, giving them a gift they will never forget ?.
+ Come to our cinemas.   \n\nCommercial nCentro North Gate (Success Bello - Niquía station)
+       \nTeléfono: +57 (4) 444 2244       \nSalas: 4
+    </string>
+    <string name = "teatro1t"> Little Theatre</string>
+    <string name = "teatro1"> The Small Theater is a theater located in Medellin Colombia declared Cultural Patrimony of this city in 1985.
+ Similarly, it is based since 1986, is the Architectural Heritage and Conservation. It has two chambers: the Chamber Hall,
+ with capacity of 80 people and the Main Hall, with a capacity of 500 people.
+       \n\nCarrera 42 No. 50 A 12 \n (Córdoba with The Beach)  Medellin\n (57) - (4) 239 3947-269 9418
+    </string>
+    <string name = "teatro2t"> Prado Theatre Aguila Descalza </string>
+    <string name = "teatro2"> Its headquarters is a heritage building that has become artistic, architectural and tourist reference of Medellin.
+ There works a room with capacity for 460 spectators; a museum that preserves oil paintings, drawings and collages of Carlos Mario Aguirre
+ and other Colombian artists and a coffee bar is a meeting point before and after the presentations. The group provides ongoing programming
+ at its headquarters with their own creations and guest artists. The Barefoot Eagle since its inception in 1980 has grown from a one-man project
+ of its creator Carlos Mario Aguirre, who at the beginning served as actor, playwright, director and manager of his work;
+ to become a strong cultural institution dedicated to promoting the performing and visual arts.
+       \n\n Address: Cra 45d # 59-1, Barrio Prado\nTeléfono. (4) 2,844,211
+    </string>
+    <string name = "rest1t"> El Barco </string>
+    <string name ="rest1"> Excellent food and attention, pure Colombian Pacific, the best sea food found in the city\n options. lunch, only cash,
+ Wi-Fi free, high chairs available, Parking available, Reservation, Seat, alcohol, takeaways, Waiter, Wine and beer is served\n\n
+ Carrera 48 # 85-198. | Itagui, Medellin\n +57 4 2851090
+    </string>
+    <string name = "rest2t">Alá Sazón</string>
+    <string name = "rest2"> A great place that makes you feel in the east, the setting and the Lebanese food is excellent. A small but charming- place
+       \n\nCRA 40 # 10-A - 33 | The Town\nTelefono: +57 4 2669170
+    </string>
+    <string name = "rest3t"> Verdeo Restaurant </string>
+    <string name = "rest3"> In the restaurant you will find Verdeo prepared exclusively with organic food, natural products,
+ sustainable and most importantly without animal protein with some vegan options. It is recommended to taste as input
+ Sweetcorn exquisite cream served in panne cook seeds and mushrooms as the main course accompanied Beer
+ with mashed potatoes, avocados, almonds and green banana. For dessert you can not miss trying Nutella and banana pudding or
+ Flor de Milonga spectacular Jamaica, made with almond meringue with mascarpone cream and syrup Jaimaca flower.
+ As a vegan option found Shawarma plate, flat bread stuffed with hummus, tabbouleh, falafel and wash.\n\n
+ Address: Cra 35 # 8A-3, Provensa, Medellin.       \nTeléfono: (4) 4440935
+    </string>
+    <string name = "rumba1t"> Disco Prizma </string>
+    <string name = "rumba1"> Disco only reggaeton. It is huge, and open space is a relief. The capacity of the club is 700 people.
+ Prizmas popularity means that it is best to book in advance through his Facebook page, instead of the
+ planning a Friday night or Saturday and expect to get.\n\nAddress: Calle 25 A # 43 B - 199, Barrio Colombia\n
+ Phone: 231-2313\nWebsite: http://www.facebook.com/pages/PRIZMA-MEDELL%C3%8DN/168164453238584\n
+ Email: prizmadiscoteca@hotmail.com\n
+    </string>
+    <string name = "rumba2t"> Kukaramakara </string>
+    <string name = "rumba2"> It is a place where people for the warm, fun and family atmosphere delita also enjoys an innovative
+ atonement every night Latin lives are live performances accompanied by the best rumba of the city.
+ It also has a wide variety of spirits, cocktails and cuisine that make the place an unforgettable experience
+       \n\n Address: Cra 43A No. 6S - Rio 26 South 7th floor, El Poblado\n Tel. 57 (4) 312 25 27
+    </string>
+    <string name = "rumba3t"> Fonda sweet Jesus Mio </string>
+    <string name = "rumba3"> We are a mountaineer inn, the best characterization of a typical village of Antioquia, with singers
+ and artists live and characters, it is not uncommon that visitors encounter the fool of the people, the doctor, the priest
+ and the schoolgirl among others, these characters make the moments in our facilities are the most pleasant, filling each attendee
+ of joy and enjoyment\n SWEET JESUS MIO "as you so Paisa"\n\nDirección. Carrera 38 No. 19 255 km2 palms immediately via
+ the courtyard restaurant, Medellin\nTeléfono: (4) 4,446,022
+    </string>
+    <string name = "turis1t"> Museum of Antioquia </string>
+    <string name = "turis1"> This is the most important museum in Medellin, and one of the best known of Colombia.
+ It was first founded in the department of Antioquia, the second in the country. Collections rest in the center of Medellin,
+ collection of works dating back to 1954 by national and international artists. against Botero Square, near the Parque Berrio Metro Station.
+       \n\n Address:. Cl 52 # 52-43, Medellin, Antioquia\n Tel .: (4) 2,513,636
+    </string>
+    <string name = "turis2t"> Tourist Corridor Las Palmas </string>
+    <string name = "turis2"> Your semicampestre environment, the striking designs of facilities and easy access from anywhere
+ in Medellin give this place a touch only. This tourist circuit corresponds to the first kilometers of the route Las Palmas,
+ which begins near the subway station Exhibitions. In this modern way prestigious restaurants, clubs, bars, cafes and estaderos
+ are located, with offers for all audiences. Due to the nature of the route, which climbs a hillside surrounding the city, most
+ establishments possible to see the city, which gives them an additional attraction. Either the purpose or the nightlife
+ space for lunch or dinner in this tourist circuit Las Palmas visitors can find a varied offer that satisfies everyone.
+       \n\n Via Las Palmas
+    </string>
+    <string name = "turis3t"> Metro Tourism </string>
+    <string name = "turis3"> Tourism METRO is a program created to travel the Aburrá Valley and nearby regions, exploring the nuances
+ that characterize it: flowers, culture , trade, art and mountains rich in a wide variety of species. Their packages give you the
+ opportunity to explore their interest through a means of insurance, flexible, reliable and friendly transportation environment;
+ it is also an international leader.\n\n For prices, can contact 4449598 Hi METRO line and to purchase the tour package,
+ come to one of the Customer Service Points * -PAC- located at stations Niquía, San Antonio and Itagui. Each package includes
+ the means of payment to access the METRO system and transportation to the site you have chosen.
+    </string>
+</resources>
