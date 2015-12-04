@@ -229,16 +229,6 @@ public class LisTabs extends AppCompatActivity {
             MapsActivity.lon3=-75.57019;
             MapsActivity.ubica3=getString(tu3t);
         }
-        /*if (TbH.getCurrentTab()==null){
-            MapsActivity.lat=23;
-            MapsActivity.lon=-75;
-            MapsActivity.ubica="Funciono";
-        }else {
-            MapsActivity.lat=23;
-            MapsActivity.lon=-20;
-            MapsActivity.ubica="Tambien Funciono";
-
-        }*/
 
 
     }

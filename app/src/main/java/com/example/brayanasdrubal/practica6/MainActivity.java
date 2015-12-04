@@ -3,6 +3,7 @@ package com.example.brayanasdrubal.practica6;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             if (findViewById(R.id.lay2) != null){
 
 
-            /*    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
                 fab.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -149,55 +150,96 @@ public class MainActivity extends AppCompatActivity {
                     sit1.setImageResource(R.drawable.cine1);
                     t1.setText(c1t);
                     tx1.setText(c1);
+                    MapsActivity.lat1=6.241011267877558;
+                    MapsActivity.lon1=-75.57766955;
+                    MapsActivity.ubica1=getString(c1t);
                     sit2.setImageResource(R.drawable.cine2);
                     t2.setText(c2t);
                     tx2.setText(c2);
+                    MapsActivity.lat2=6.1980703;
+                    MapsActivity.lon2=-75.5613467;
+                    MapsActivity.ubica2=getString(c2t);
                     sit3.setImageResource(R.drawable.cine3);
                     t3.setText(c3t);
                     tx3.setText(c3);
+                    MapsActivity.lat3=6.3387582;
+                    MapsActivity.lon3=-75.5443311;
+                    MapsActivity.ubica3=getString(c3t);
                 }else if(MainActivity.num ==1){
                     setTitle(getText(R.string.Teatro));
                     sit1.setImageResource(R.drawable.teatro1);
                     t1.setText(t1t);
                     tx1.setText(te1);
+                    MapsActivity.lat1=6.2475587;
+                    MapsActivity.lon1=-75.5617345;
+                    MapsActivity.ubica1=getString(t1t);
                     sit2.setImageResource(R.drawable.teatro2);
                     t2.setText(t2t);
                     tx2.setText(te2);
+                    MapsActivity.lat2=6.254683;
+                    MapsActivity.lon2=-75.560682;
+                    MapsActivity.ubica2=getString(t2t);
                 }else if(MainActivity.num ==2){
                     setTitle(getText(R.string.Restaurante));
                     sit1.setImageResource(R.drawable.rest1);
                     t1.setText(r1t);
                     tx1.setText(r1);
+                    MapsActivity.lat1=6.1909656;
+                    MapsActivity.lon1=-75.5891475;
+                    MapsActivity.ubica1=getString(r1t);
                     sit2.setImageResource(R.drawable.rest2);
                     t2.setText(r2t);
                     tx2.setText(r2);
+                    MapsActivity.lat2=6.2106231;
+                    MapsActivity.lon2=-75.5677216;
+                    MapsActivity.ubica2=getString(r2t);
                     sit3.setImageResource(R.drawable.rest3);
                     t3.setText(r3t);
                     tx3.setText(r3);
+                    MapsActivity.lat3=6.207538;
+                    MapsActivity.lon3=-75.5662842;
+                    MapsActivity.ubica3=getString(r3t);
                 }else if(MainActivity.num ==3){
                     setTitle(getText(R.string.Rumba));
                     sit1.setImageResource(R.drawable.rumba1);
                     t1.setText(ru1t);
                     tx1.setText(ru1);
+                    MapsActivity.lat1=6.2243618;
+                    MapsActivity.lon1=-75.5703363;
+                    MapsActivity.ubica1=getString(ru1t);
                     sit2.setImageResource(R.drawable.rumba2);
                     t2.setText(ru2t);
                     tx2.setText(ru2);
+                    MapsActivity.lat2=6.1984366;
+                    MapsActivity.lon2=-75.5735943;
+                    MapsActivity.ubica2=getString(ru2t);
                     sit3.setImageResource(R.drawable.rumba3);
                     t3.setText(ru3t);
                     tx3.setText(ru3);
-                }else if(MainActivity.num ==4){
+                    MapsActivity.lat3=6.2231504;
+                    MapsActivity.lon3=-75.5653274;
+                    MapsActivity.ubica3=getString(ru3t);
+                }else if(MainActivity.num == 4) {
                     setTitle(getText(R.string.Turismo));
                     sit1.setImageResource(R.drawable.turi1);
                     t1.setText(tu1t);
                     tx1.setText(tu1);
+                    MapsActivity.lat1=6.2521817;
+                    MapsActivity.lon1=-75.569335;
+                    MapsActivity.ubica1=getString(tu1t);
                     sit2.setImageResource(R.drawable.turi2);
                     t2.setText(tu2t);
                     tx2.setText(tu2);
+                    MapsActivity.lat2=6.2363565;
+                    MapsActivity.lon2=-75.5684804;
+                    MapsActivity.ubica2=getString(tu2t);
                     sit3.setImageResource(R.drawable.turi3);
                     t3.setText(tu3t);
                     tx3.setText(tu3);
-
-                }*/
+                    MapsActivity.lat3=6.24714;
+                    MapsActivity.lon3=-75.57019;
+                    MapsActivity.ubica3=getString(tu3t);
+                }
             }
         lstNombres.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
