@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class LisTabs extends AppCompatActivity {
     TabHost TbH;
     private int l=0,p,c1t, c2t, c3t, c1, c2, c3, t1t, t2t, te1, te2, r1t, r2t, r3t, r1, r2, r3, ru1t, ru2t, ru3t, ru1, ru2, ru3, tu1t, tu2t, tu3t, tu1, tu2, tu3;
+    public static String mapt;
     private String[] lugares={"Royal Films","CineMArk","Procinal","Pequeño Teatro","Aguila Descalza",
             "El Barco","A lá Sazón","Verdeo","Prizma","Kukaramakara","Dulce Jesus Mio","Museo de Antioquia","Las Palmas","Metro de Medellín"};
     private String[] tit={"Cine","Teatro","Restaurante","Rumba","Turismo","Cinema", "Theatre", "Restaurant", "Rumba", "Tourism"};
@@ -135,6 +136,7 @@ public class LisTabs extends AppCompatActivity {
         TextView tx3 = (TextView) findViewById(R.id.tex3);
 
         if(MainActivity.num ==0){
+            mapt=getString(R.string.Cine);
             setTitle(getText(R.string.Cine));
             sit1.setImageResource(R.drawable.cine1);
             t1.setText(c1t);
@@ -155,6 +157,7 @@ public class LisTabs extends AppCompatActivity {
             MapsActivity.lon3=-75.5443311;
             MapsActivity.ubica3=getString(c3t);
         }else if(MainActivity.num ==1){
+            mapt=getString(R.string.Teatro);
             setTitle(getText(R.string.Teatro));
             sit1.setImageResource(R.drawable.teatro1);
             t1.setText(t1t);
@@ -169,6 +172,7 @@ public class LisTabs extends AppCompatActivity {
             MapsActivity.lon2=-75.560682;
             MapsActivity.ubica2=getString(t2t);
         }else if(MainActivity.num ==2){
+            mapt=getString(R.string.Restaurante);
             setTitle(getText(R.string.Restaurante));
             sit1.setImageResource(R.drawable.rest1);
             t1.setText(r1t);
@@ -189,6 +193,7 @@ public class LisTabs extends AppCompatActivity {
             MapsActivity.lon3=-75.5662842;
             MapsActivity.ubica3=getString(r3t);
         }else if(MainActivity.num ==3){
+            mapt=getString(R.string.Rumba);
             setTitle(getText(R.string.Rumba));
             sit1.setImageResource(R.drawable.rumba1);
             t1.setText(ru1t);
@@ -209,6 +214,7 @@ public class LisTabs extends AppCompatActivity {
             MapsActivity.lon3=-75.5653274;
             MapsActivity.ubica3=getString(ru3t);
         }else if(MainActivity.num == 4) {
+            mapt=getString(R.string.Turismo);
             setTitle(getText(R.string.Turismo));
             sit1.setImageResource(R.drawable.turi1);
             t1.setText(tu1t);

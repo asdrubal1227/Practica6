@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView t3 = (TextView) findViewById(R.id.tit3);
                 TextView tx3 = (TextView) findViewById(R.id.tex3);
                 if(MainActivity.num ==0){
+                    LisTabs.mapt=getString(R.string.Cine);
                     setTitle(getText(R.string.Cine));
                     sit1.setImageResource(R.drawable.cine1);
                     t1.setText(c1t);
@@ -166,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     MapsActivity.lon3=-75.5443311;
                     MapsActivity.ubica3=getString(c3t);
                 }else if(MainActivity.num ==1){
+                    LisTabs.mapt=getString(R.string.Teatro);
                     setTitle(getText(R.string.Teatro));
                     sit1.setImageResource(R.drawable.teatro1);
                     t1.setText(t1t);
@@ -180,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                     MapsActivity.lon2=-75.560682;
                     MapsActivity.ubica2=getString(t2t);
                 }else if(MainActivity.num ==2){
+                    LisTabs.mapt=getString(R.string.Restaurante);
                     setTitle(getText(R.string.Restaurante));
                     sit1.setImageResource(R.drawable.rest1);
                     t1.setText(r1t);
@@ -200,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
                     MapsActivity.lon3=-75.5662842;
                     MapsActivity.ubica3=getString(r3t);
                 }else if(MainActivity.num ==3){
+                    LisTabs.mapt=getString(R.string.Rumba);
                     setTitle(getText(R.string.Rumba));
                     sit1.setImageResource(R.drawable.rumba1);
                     t1.setText(ru1t);
@@ -220,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
                     MapsActivity.lon3=-75.5653274;
                     MapsActivity.ubica3=getString(ru3t);
                 }else if(MainActivity.num == 4) {
+                    LisTabs.mapt=getString(R.string.Turismo);
                     setTitle(getText(R.string.Turismo));
                     sit1.setImageResource(R.drawable.turi1);
                     t1.setText(tu1t);

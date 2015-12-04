@@ -125,6 +125,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     //         mMap.animateCamera(mCam);
                 }
 
+        TextView mt = (TextView) findViewById(R.id.maptext);
+        mt.setText(LisTabs.mapt);
 
     }
 
@@ -200,7 +202,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mCam = CameraUpdateFactory.newLatLngZoom(pos, 12);
                 mMap.animateCamera(mCam);
                 //mMap.addMarker(marker).showInfoWindow();
-                mMap.addMarker(new MarkerOptions().position(pos).title("Mi ubicación").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))).showInfoWindow();
+                mMap.addMarker(new MarkerOptions().position(pos).title(getString(R.string.ubc)).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))).showInfoWindow();
 
                 setLocation(loc);
                 n=1;

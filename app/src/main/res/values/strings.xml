@@ -1,4 +1,5 @@
 <resources>
+    <string name="ubc">Mi Ubicación</string>
     <string name="app_name">Recorre Medellín</string>
     <string name="flash">FLASH</string>
     <string name="poderesFlash">super speed, intangibility, superhuman agility</string>

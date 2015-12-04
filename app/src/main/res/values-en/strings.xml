@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <string name="ubc">My Ubication</string>
     <string name = "L"> Places </string>
     <string name = "Cine"> Cinema </string>
     <string name = "Teatro"> Theatre </string>
