@@ -3,6 +3,7 @@ package com.example.brayanasdrubal.practica6;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         datos= new Lista_Entrada[]{
                 new Lista_Entrada(R.drawable.cine, getString(R.string.Cine), "3 "+getString(R.string.L),"Cinema","3 Places"),
                 new Lista_Entrada(R.drawable.teatro, getString(R.string.Teatro), "2 "+getString(R.string.L), "Theatre","2 Places"),
@@ -64,6 +64,18 @@ public class MainActivity extends AppCompatActivity {
         }*/
 
             if (findViewById(R.id.lay2) != null){
+
+
+                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+                fab.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(MainActivity.this, "Mapa", Toast.LENGTH_SHORT).show();
+
+                        Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                        startActivity(i);
+                    }
+                });
                 TbH = (TabHost) findViewById(R.id.tabHost); //llamamos al Tabhost
                 TbH.setup();                                                         //lo activamos
                 TabHost.TabSpec tab1 = TbH.newTabSpec("tab1");  //aspectos de cada Tab (pestaña)
@@ -110,12 +122,14 @@ public class MainActivity extends AppCompatActivity {
                 tu3=R.string.turis3;
 
 
+
                 tab1.setIndicator(lugares[l]);    //qué queremos que aparezca en las pestañas
                 tab1.setContent(R.id.ejemplo1); //definimos el id de cada Tab (pestaña)
                 tab2.setIndicator(lugares[l + 1]);
                 tab2.setContent(R.id.ejemplo2);
                 tab3.setIndicator(lugares[l + 2]);
                 tab3.setContent(R.id.ejemplo3);
+
                 TbH.addTab(tab1); //añadimos los tabs ya programados
                 TbH.addTab(tab2);
                 if (MainActivity.num !=1){
@@ -184,7 +198,8 @@ public class MainActivity extends AppCompatActivity {
                     t3.setText(tu3t);
                     tx3.setText(tu3);
 
-                }}
+                }
+            }
         lstNombres.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

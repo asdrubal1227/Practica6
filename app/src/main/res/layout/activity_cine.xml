@@ -7,6 +7,17 @@ android:layout_alignParentTop="true"
 android:layout_alignParentLeft="true"
 android:layout_alignParentStart="true">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
 <TabHost
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -30,8 +41,8 @@ android:layout_alignParentStart="true">
             android:layout_gravity="center" >
             <FrameLayout
                 android:id="@android:id/tabcontent"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <include layout="@layout/fragment_f1"
                     android:id="@+id/ejemplo1"/>
@@ -43,4 +54,13 @@ android:layout_alignParentStart="true">
         </ScrollView>
     </LinearLayout>
 </TabHost>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_menu_mapmode"/>
+        </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
 </LinearLayout>
