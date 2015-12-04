@@ -28,12 +28,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-    private static final long SPLASH_DELAY = 2000;
-
     private GoogleMap mMap;
     private CameraUpdate mCam;
 
@@ -97,41 +93,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        mCam=CameraUpdateFactory.newLatLngZoom(new LatLng(6.2657628,-75.5748746),11);
+        mMap.animateCamera(mCam);
         // Add a marker in Sydney and move the camera
+        LatLng udea1 = new LatLng(lat1, lon1);
+        mMap.addMarker(new MarkerOptions().position(udea1).title(ubica1).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))).showInfoWindow();
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(0, 0)));
+        // MarkerOptions marker = new MarkerOptions().position(udea).title("Hello Maps");
+        //setMarker(udea, "UdeA","Alma Mater");
+        //googleMap.addMarker(marker.showInfoWindow();
+       // mCam=CameraUpdateFactory.newLatLngZoom(udea1,12);
+        //mMap.animateCamera(mCam);
 
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                LatLng udea1 = new LatLng(lat1, lon1);
-                mMap.addMarker(new MarkerOptions().position(udea1).title(ubica1).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))).showInfoWindow();
-                //mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(0, 0)));
-                // MarkerOptions marker = new MarkerOptions().position(udea).title("Hello Maps");
-                //setMarker(udea, "UdeA","Alma Mater");
-                //googleMap.addMarker(marker.showInfoWindow();
-                mCam=CameraUpdateFactory.newLatLngZoom(udea1, (float) 12.5);
-                mMap.animateCamera(mCam);
-            }
-        };
-
-
-        TimerTask task2 = new TimerTask() {
-            @Override
-            public void run() {
-                LatLng udea2 = new LatLng(lat2, lon2);
+        LatLng udea2 = new LatLng(lat2, lon2);
                 mMap.addMarker(new MarkerOptions().position(udea2).title(ubica2).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))).showInfoWindow();
                 //mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(0, 0)));
                 // MarkerOptions marker = new MarkerOptions().position(udea).title("Hello Maps");
                 //setMarker(udea, "UdeA","Alma Mater");
                 //googleMap.addMarker(marker.showInfoWindow();
-                mCam=CameraUpdateFactory.newLatLngZoom(udea2, (float) 12.5);
-                mMap.animateCamera(mCam);
-            }
-        };
+        //       mCam=CameraUpdateFactory.newLatLngZoom(udea2,12);
+        // mMap.animateCamera(mCam);
 
-
-        TimerTask task3 = new TimerTask() {
-            @Override
-            public void run() {
                 if (MainActivity.num !=1){
                     LatLng udea3 = new LatLng(lat3, lon3);
                     mMap.addMarker(new MarkerOptions().position(udea3).title(ubica3).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))).showInfoWindow();
@@ -139,15 +121,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     // MarkerOptions marker = new MarkerOptions().position(udea).title("Hello Maps");
                     //setMarker(udea, "UdeA","Alma Mater");
                     //googleMap.addMarker(marker.showInfoWindow();
-                    mCam=CameraUpdateFactory.newLatLngZoom(udea3, (float) 12.5);
-                    mMap.animateCamera(mCam);}
-            }
-        };
-
-        Timer timer = new Timer();
-        timer.schedule(task, SPLASH_DELAY);
-        timer.schedule(task2, SPLASH_DELAY);
-        timer.schedule(task3, SPLASH_DELAY);
+                    //         mCam=CameraUpdateFactory.newLatLngZoom(udea3, 12);
+                    //         mMap.animateCamera(mCam);
+                }
 
 
     }
