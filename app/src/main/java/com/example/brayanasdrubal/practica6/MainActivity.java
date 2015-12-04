@@ -3,7 +3,6 @@ package com.example.brayanasdrubal.practica6;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             if (findViewById(R.id.lay2) != null){
 
 
-                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+            /*    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
                 fab.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -198,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                     t3.setText(tu3t);
                     tx3.setText(tu3);
 
-                }
+                }*/
             }
         lstNombres.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

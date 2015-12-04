@@ -93,7 +93,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        mCam=CameraUpdateFactory.newLatLngZoom(new LatLng(6.2657628,-75.5748746),11);
+        mCam=CameraUpdateFactory.newLatLngZoom(new LatLng(6.2657628,-75.5748746),12);
         mMap.animateCamera(mCam);
         // Add a marker in Sydney and move the camera
         LatLng udea1 = new LatLng(lat1, lon1);
@@ -197,7 +197,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng pos = new LatLng(loc.getLatitude(), loc.getLongitude());
                 //setMarker(pos, "UdeA", "Alma Mater");
                 //MarkerOptions marker = new MarkerOptions().position(pos).title("Hello Maps");
-                mCam = CameraUpdateFactory.newLatLngZoom(pos, 13);
+                mCam = CameraUpdateFactory.newLatLngZoom(pos, 11);
                 mMap.animateCamera(mCam);
                 //mMap.addMarker(marker).showInfoWindow();
                 mMap.addMarker(new MarkerOptions().position(pos).title("Mi ubicación").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))).showInfoWindow();
