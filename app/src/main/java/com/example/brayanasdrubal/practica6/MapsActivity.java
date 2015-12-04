@@ -197,7 +197,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng pos = new LatLng(loc.getLatitude(), loc.getLongitude());
                 //setMarker(pos, "UdeA", "Alma Mater");
                 //MarkerOptions marker = new MarkerOptions().position(pos).title("Hello Maps");
-                mCam = CameraUpdateFactory.newLatLngZoom(pos, 11);
+                mCam = CameraUpdateFactory.newLatLngZoom(pos, 12);
                 mMap.animateCamera(mCam);
                 //mMap.addMarker(marker).showInfoWindow();
                 mMap.addMarker(new MarkerOptions().position(pos).title("Mi ubicación").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))).showInfoWindow();
