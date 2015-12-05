@@ -235,4 +235,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
     }/* End of Class MyLocationListener */
+
+    public void Actualizar(){
+    n=0;
+    }
 }
