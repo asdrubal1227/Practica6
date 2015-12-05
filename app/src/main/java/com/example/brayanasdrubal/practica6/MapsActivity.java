@@ -195,7 +195,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             /*lat=Double.parseDouble(latitud.getText().toString());
             lon=Double.parseDouble(longitud.getText().toString());*/
-            if (n==0) {
+            if (n==5) {
                 LatLng pos = new LatLng(loc.getLatitude(), loc.getLongitude());
                 //setMarker(pos, "UdeA", "Alma Mater");
                 //MarkerOptions marker = new MarkerOptions().position(pos).title("Hello Maps");
@@ -205,7 +205,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mMap.addMarker(new MarkerOptions().position(pos).title(getString(R.string.ubc)).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))).showInfoWindow();
 
                 setLocation(loc);
-                n=1;
+                n=10;
+            }else if (n<7){
+                n=n+1;
             }
         }
 
