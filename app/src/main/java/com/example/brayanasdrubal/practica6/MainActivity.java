@@ -49,19 +49,6 @@ public class MainActivity extends AppCompatActivity {
         lstNombres = (ListView) findViewById(R.id.Lst);
 
         lstNombres.setAdapter(adaptador);
-        /*if(findViewById(R.id.Lst)!=null){
-            Animal animal = new Animal();
-            animal.setName("Penguin");
-            animal.setImageUrl("http://www.emperor-penguin.com/penguin-chick.jpg");
-            animal.setDescription("Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin Penguin ");
-
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("animal",animal);
-
-            AnimalDetailFragment animalDetailFragment = new AnimalDetailFragment();
-            animalDetailFragment.setArguments(bundle);
-            fragmentTransaction.add(R.id.framelayout_right,animalDetailFragment);
-        }*/
 
             if (findViewById(R.id.lay2) != null){
 
